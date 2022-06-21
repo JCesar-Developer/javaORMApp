@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.proyectos.MostrarProyecto_Controller">
+    <children>
+        <Pane prefHeight="265.0" prefWidth="623.0" style="-fx-background-color: D4D5D4;">
+            <children>
+                <Separator layoutY="53.0" prefHeight="0.0" prefWidth="622.0" />
+                <Label layoutX="22.0" layoutY="76.0" text="Pais" />
+                <Label layoutX="297.0" layoutY="76.0" text="Localización" />
+                <Label layoutX="22.0" layoutY="119.0" text="Fecha de inicio" />
+                <Label layoutX="296.0" layoutY="119.0" text="Fecha final" />
+                <Label layoutX="22.0" layoutY="165.0" text="Financiador" />
+                <Label layoutX="297.0" layoutY="165.0" text="Financiación aportada" />
+                <Label layoutX="23.0" layoutY="214.0" text="Socio Local" />
+                <TextField fx:id="tf_pais" layoutX="62.0" layoutY="72.0" onKeyReleased="#updPais" prefHeight="25.0" prefWidth="222.0" />
+                <TextField fx:id="tf_localizacion" layoutX="373.0" layoutY="72.0" onKeyReleased="#updLocalizacion" prefHeight="25.0" prefWidth="222.0" />
+                <DatePicker fx:id="dp_fechaInicio" layoutX="109.0" layoutY="115.0" onKeyReleased="#updFechaInicio" />
+                <DatePicker fx:id="dp_fechaFinal" layoutX="373.0" layoutY="115.0" onKeyReleased="#updFechaFin" />
+                <TextField fx:id="tf_financiador" layoutX="92.0" layoutY="161.0" onKeyReleased="#updFinanciador" prefHeight="25.0" prefWidth="191.0" />
+                <TextField fx:id="tf_financiacionAportada" layoutX="422.0" layoutY="161.0" onKeyReleased="#updFinanciado" prefHeight="25.0" prefWidth="174.0" />
+                <TextField fx:id="tf_socioLocal" layoutX="92.0" layoutY="210.0" onKeyReleased="#updSocioLocal" prefHeight="25.0" prefWidth="191.0" />
+            </children>
+        </Pane>
+        <Label layoutX="19.0" layoutY="23.0" text="ID proyecto" />
+        <TextField fx:id="tf_idProyecto" disable="true" layoutX="98.0" layoutY="19.0" prefHeight="25.0" prefWidth="182.0" />
+        <Button fx:id="btnAnterior" layoutX="196.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnAnterior" style="-fx-background-color: CAEEEA;" text="&lt;" />
+        <Button fx:id="btnSiguiente" layoutX="392.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnSiguiente" style="-fx-background-color: CAEEEA;" text="&gt;" />
+        <Button fx:id="btnBuscar" layoutX="129.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnBuscar" style="-fx-background-color: EBDEB1;" text="BUSCAR" />
+        <Button fx:id="btnBorrar" layoutX="227.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnBorrar" style="-fx-background-color: EBB5B1;" text="ELIMINAR" />
+        <Button fx:id="btnGuardar" layoutX="312.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnGuardar" style="-fx-background-color: D0EBB1;" text="GUARDAR" />
+        <Button fx:id="btnNuevo" layoutX="432.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnNuevo" style="-fx-background-color: EBDEB1;" text="AÑADIR" />
+        <Button fx:id="btnCancelar" layoutX="501.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnCancelar" style="-fx-background-color: EBDEB1;" text="CANCELAR" />
+        <Button fx:id="btnSalir" layoutX="75.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnSalir" style="-fx-background-color: F58787;" text="SALIR" />
+        <Label fx:id="ID_MostrarProyecto" layoutX="232.0" layoutY="336.0" text="Ventana_MostrarProyectos - Licencia: Desarrollado por PrUOCxy Server" />
+    </children>
+</Pane>

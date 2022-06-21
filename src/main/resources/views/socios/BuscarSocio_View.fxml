@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.socios.BuscarSocio_Controller">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="148.0" prefWidth="1011.0" style="-fx-background-color: grey;" />
+      <Button disable="true" layoutX="145.0" layoutY="299.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Cancelar" />
+      <Button disable="true" layoutX="334.0" layoutY="299.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Nuevo" />
+      <Button disable="true" layoutX="440.0" layoutY="299.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Borrar" />
+      <Button layoutX="547.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnBuscar" prefHeight="25.0" prefWidth="87.0" text="Buscar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="72.0" layoutY="32.0" text="ID:" />
+      <Label layoutX="281.0" layoutY="32.0" text="NOMBRE:" />
+      <TextField fx:id="tf_id" layoutX="96.0" layoutY="28.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="tf_nombre" layoutX="342.0" layoutY="28.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="67.0" layoutY="67.0" text="NIF:" />
+      <TextField fx:id="tf_NIF" layoutX="96.0" layoutY="63.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="49.0" layoutY="103.0" text="F. NAC:" />
+      <TextField fx:id="tf_movil" layoutX="342.0" layoutY="99.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="290.0" layoutY="103.0" text="MOVIL:" />
+      <Label layoutX="266.0" layoutY="67.0" text="DIRECCIÓN:" />
+      <TextField disable="true" layoutX="341.0" layoutY="63.0" prefHeight="25.0" prefWidth="632.0" />
+      <TextField disable="true" layoutX="942.0" layoutY="99.0" prefHeight="25.0" prefWidth="31.0" />
+      <Label layoutX="897.0" layoutY="103.0" text="SEXO:" />
+      <TextField fx:id="tf_correo" layoutX="558.0" layoutY="99.0" prefHeight="25.0" prefWidth="319.0" />
+      <Label layoutX="495.0" layoutY="103.0" text="CORREO:" />
+      <Separator layoutX="42.0" layoutY="137.0" prefHeight="17.0" prefWidth="925.0" />
+      <TextField disable="true" layoutX="101.0" layoutY="206.0" prefHeight="25.0" prefWidth="556.0" />
+      <Label layoutX="14.0" layoutY="210.0" text="NRO. CUENTA:" />
+      <Label layoutX="21.0" layoutY="173.0" text="TIPO CUOTA:" />
+      <ComboBox disable="true" layoutX="101.0" layoutY="169.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="379.0" layoutY="173.0" text="FECHA DE ALTA:" />
+      <Label layoutX="694.0" layoutY="173.0" text="FECHA DE BAJA:" />
+      <DatePicker disable="true" layoutX="483.0" layoutY="169.0" />
+      <DatePicker disable="true" layoutX="798.0" layoutY="169.0" />
+      <DatePicker disable="true" layoutX="95.0" layoutY="99.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="40.0" layoutY="247.0" text="INGRESO:" />
+      <TextField disable="true" layoutX="101.0" layoutY="243.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="266.0" layoutY="247.0" text="PROYECTO:" />
+      <ComboBox disable="true" layoutX="336.0" layoutY="243.0" prefHeight="25.0" prefWidth="319.0" />
+      <Separator layoutX="39.0" layoutY="281.0" prefHeight="17.0" prefWidth="925.0" />
+      <Label fx:id="ID_BuscarSocios" layoutX="625.0" layoutY="333.0" text="Ventana_BuscarSocios  - Licencia: Desarrollado por PrUOCxy Server" />
+      <Label layoutX="497.0" layoutY="32.0" text="APELLIDO 1:" />
+      <TextField fx:id="tf_apellido1" layoutX="573.0" layoutY="28.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="745.0" layoutY="32.0" text="APELLIDO 2:" />
+      <TextField fx:id="tf_apellido2" layoutX="822.0" layoutY="28.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button disable="true" layoutX="37.0" layoutY="299.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: D0E5A4;" text="Guardar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="897.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnSalir" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: FE9393;" text="SALIR" textFill="#f2f2f2">
+         <font>
+            <Font name="Verdana Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

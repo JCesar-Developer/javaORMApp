@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.InterfacesPrincipales.MenuInicio_Controller">
+   <children>
+      <Button layoutX="41.0" layoutY="131.0" mnemonicParsing="false" onAction="#btnSocios" prefHeight="25.0" prefWidth="124.0" text="Socios">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button disable="true" layoutX="227.0" layoutY="131.0" mnemonicParsing="false" onAction="#btnContactos" prefHeight="25.0" prefWidth="124.0" text="Contactos" />
+      <Button layoutX="406.0" layoutY="131.0" mnemonicParsing="false" onAction="#btnListados" prefHeight="25.0" prefWidth="124.0" text="Listados">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="41.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnGestionEquipo" prefHeight="25.0" prefWidth="124.0" text="Gestión de Equipo">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnProyectos" layoutX="238.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnProyectos" prefHeight="25.0" prefWidth="124.0" text="Proyectos" />
+      <Button disable="true" layoutX="406.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnAgenda" prefHeight="25.0" prefWidth="124.0" text="Agenda" />
+      <Button layoutX="509.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnSalir" text="SALIR">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="ID_MenuInicio" layoutX="258.0" layoutY="361.0" text="MenuInicio  - Licencia: Desarrollado por PrUOCxy Server" />
+      <ImageView fx:id="imageView1" fitHeight="91.0" fitWidth="94.0" layoutX="52.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/socio.png" />
+         </image>
+
+      </ImageView>
+      <ImageView fx:id="imageView2" fitHeight="85.0" fitWidth="116.0" layoutX="247.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/contactos.png" />
+         </image></ImageView>
+      <ImageView fx:id="imageView3" fitHeight="91.0" fitWidth="91.0" layoutX="422.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/list.png" />
+         </image></ImageView>
+      <ImageView fx:id="imageView4" fitHeight="85.0" fitWidth="124.0" layoutX="61.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/eeee.png" />
+         </image></ImageView>
+      <ImageView fx:id="imageView5" fitHeight="97.0" fitWidth="97.0" layoutX="249.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/conta.png" />
+         </image></ImageView>
+      <ImageView fx:id="imageView6" fitHeight="91.0" fitWidth="91.0" layoutX="420.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/agenda.png" />
+         </image></ImageView>
+   </children>
+</Pane>

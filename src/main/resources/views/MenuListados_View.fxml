@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.InterfacesPrincipales.MenuListados_Controller">
+   <children>
+      <Button layoutX="238.0" layoutY="110.0" mnemonicParsing="false" onAction="#btnListadoSocios" prefHeight="25.0" prefWidth="126.0" text="Listado de Socios">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="200.0" layoutY="48.0" mnemonicParsing="false" onAction="#btnListadoEquipo" prefHeight="25.0" prefWidth="201.0" text="Listado de Miembros de Equipo">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button disable="true" layoutX="238.0" layoutY="241.0" mnemonicParsing="false" text="Listado de Contactos" />
+      <Button disable="true" layoutX="238.0" layoutY="300.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Listados económicos" />
+      <Button layoutX="496.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnSalir" prefHeight="25.0" prefWidth="69.0" text="Salir">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="ID_MenuListados" layoutX="254.0" layoutY="371.0" text="MenuListados  - Licencia: Desarrollado por PrUOCxy Server" />
+      <Button layoutX="238.0" layoutY="175.0" mnemonicParsing="false" onAction="#btnListadoProyectos" prefHeight="25.0" prefWidth="126.0" text="Listado de Proyectos">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

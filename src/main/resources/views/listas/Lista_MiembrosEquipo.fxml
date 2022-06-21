@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.Listas.ListaMiembrosEquipo_Controller">
+    <children>
+      <ImageView fitHeight="1034.0" fitWidth="1921.0" layoutX="-4.0" layoutY="-50.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../icons/hands.png" />
+         </image>
+      </ImageView>
+        <TableView id="s" fx:id="tbl_listaEquipos" editable="true" layoutX="57.0" layoutY="28.0" onMouseClicked="#seleccionarRegistro" opacity="0.92" prefHeight="729.0" prefWidth="1794.0">
+            <columns>
+                <TableColumn fx:id="col_nombre" prefWidth="110.0" text="Nombre" />
+                <TableColumn fx:id="col_apellido1" prefWidth="110.0" text="Apellido 1" />
+                <TableColumn fx:id="col_apellido2" prefWidth="110.0" text="Apellido 2" />
+                <TableColumn fx:id="col_dni" prefWidth="150.0" text="DNI" />
+                <TableColumn fx:id="col_direccion" prefWidth="277.0" text="Dirección" />
+            <TableColumn fx:id="col_fechaNacimiento" prefWidth="149.0" text="Fecha de Nacimiento" />
+            <TableColumn fx:id="col_movil" prefWidth="208.0" text="Teléfono" />
+            <TableColumn fx:id="col_correo" prefWidth="287.0" text="Correo electrónico" />
+            <TableColumn fx:id="col_sexo" minWidth="0.0" prefWidth="41.0" text="Sexo" />
+            <TableColumn fx:id="col_miembroEquipo" prefWidth="260.0" text="Miembro de Equipo tipo:" />
+            <TableColumn fx:id="col_rol" prefWidth="100.0" text="Es ADMIN" />
+            </columns>
+        </TableView>
+        <Label fx:id="ID_ListaEquipo" layoutX="991.0" layoutY="931.0" prefHeight="40.0" prefWidth="877.0" text="Lista_MiembrosEquipo  - Licencia: Desarrollado por PrUOCxy Server">
+         <font>
+            <Font size="29.0" />
+         </font></Label>
+        <TextArea layoutX="216.0" layoutY="809.0" prefHeight="79.0" prefWidth="414.0" />
+        <Text layoutX="51.0" layoutY="870.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL">
+         <font>
+            <Font size="44.0" />
+         </font></Text>
+      <Button layoutX="1708.0" layoutY="837.0" mnemonicParsing="false" onAction="#btnSalir" prefHeight="52.0" prefWidth="143.0" style="-fx-background-color: F95454;" text="SALIR">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+    </children>
+</Pane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.socios.MostrarSocio_Controller">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="151.0" prefWidth="1011.0" style="-fx-background-color: grey;" />
+      <Button fx:id="btnCancelar" disable="true" layoutX="181.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnCancelar" prefHeight="25.0" prefWidth="87.0" text="Cancelar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="341.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnNuevo" prefHeight="25.0" prefWidth="87.0" text="Nuevo">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="447.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnBorrar" prefHeight="25.0" prefWidth="87.0" text="Borrar" />
+      <Button layoutX="554.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnBuscar" prefHeight="25.0" prefWidth="87.0" text="Buscar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="72.0" layoutY="32.0" text="ID:" />
+      <Label layoutX="281.0" layoutY="32.0" text="NOMBRE:" />
+      <Label layoutX="498.0" layoutY="32.0" text="APELLIDO 1:" />
+      <TextField fx:id="tf_id" disable="true" editable="false" layoutX="96.0" layoutY="28.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="tf_nombre" layoutX="342.0" layoutY="28.0" onKeyReleased="#updNombre" prefHeight="25.0" prefWidth="138.0" />
+      <TextField fx:id="tf_apellido1" layoutX="574.0" layoutY="28.0" onKeyReleased="#updApellido1" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="67.0" layoutY="67.0" text="NIF:" />
+      <TextField fx:id="tf_nif" layoutX="96.0" layoutY="63.0" onKeyReleased="#updNIF" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="49.0" layoutY="103.0" text="F. NAC:" />
+      <TextField fx:id="tf_movil" layoutX="342.0" layoutY="99.0" onKeyReleased="#updMovil" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="290.0" layoutY="103.0" text="MOVIL:" />
+      <Label layoutX="266.0" layoutY="67.0" text="DIRECCIÓN:" />
+      <TextField fx:id="tf_direccion" layoutX="341.0" layoutY="63.0" onKeyReleased="#updDireccion" prefHeight="25.0" prefWidth="632.0" />
+      <TextField fx:id="tf_sexo" layoutX="941.0" layoutY="99.0" onKeyReleased="#updSexo" prefHeight="25.0" prefWidth="31.0" />
+      <Label layoutX="867.0" layoutY="103.0" text="SEXO(H/M):" />
+      <TextField fx:id="tf_correo" layoutX="554.0" layoutY="99.0" onKeyReleased="#updCorreo" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="492.0" layoutY="103.0" text="CORREO:" />
+      <Separator layoutX="42.0" layoutY="137.0" prefHeight="17.0" prefWidth="925.0" />
+      <TextField layoutX="101.0" layoutY="206.0" prefHeight="25.0" prefWidth="556.0" />
+      <Label layoutX="14.0" layoutY="210.0" text="NRO. CUENTA:" />
+      <Label layoutX="21.0" layoutY="173.0" text="TIPO CUOTA:" />
+      <ComboBox layoutX="101.0" layoutY="169.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="379.0" layoutY="173.0" text="FECHA DE ALTA:" />
+      <Label layoutX="694.0" layoutY="173.0" text="FECHA DE BAJA:" />
+      <DatePicker layoutX="483.0" layoutY="169.0" />
+      <DatePicker layoutX="798.0" layoutY="169.0" />
+      <DatePicker fx:id="dp_fechaNacimiento" layoutX="95.0" layoutY="99.0" onKeyReleased="#updFechaNacimiento" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="40.0" layoutY="247.0" text="INGRESO:" />
+      <TextField layoutX="101.0" layoutY="243.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="266.0" layoutY="247.0" text="PROYECTO:" />
+      <ComboBox layoutX="336.0" layoutY="243.0" prefHeight="25.0" prefWidth="319.0" />
+      <Separator layoutX="39.0" layoutY="281.0" prefHeight="17.0" prefWidth="925.0" />
+      <TableView layoutX="40.0" layoutY="308.0" prefHeight="117.0" prefWidth="925.0" style="-fx-background-color: #ffffbf;">
+         <columns>
+            <TableColumn prefWidth="89.0" text="FECHA" />
+            <TableColumn prefWidth="696.0" text="PROYECTO" />
+            <TableColumn prefWidth="139.0" text="INGRESO" />
+         </columns>
+      </TableView>
+      <Label fx:id="ID_MostrarSocios" layoutX="605.0" layoutY="476.0" text="Ventana_MostrarSocios  - Licencia: Desarrollado por PrUOCxy Server" />
+      <Label layoutX="746.0" layoutY="32.0" text="APELLIDO 2:" />
+      <TextField fx:id="tf_apellido2" layoutX="823.0" layoutY="28.0" onKeyReleased="#updApellido2" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="btnAnterior" layoutX="41.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnAnterior" text="&lt;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnSiguiente" layoutX="278.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnSiguiente" text="&gt;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnGuardar" disable="true" layoutX="73.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnGuardar" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: D0E5A4;" text="Guardar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="873.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnSalir" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: FE9393;" text="SALIR" textFill="#f2f2f2">
+         <font>
+            <Font name="Verdana Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

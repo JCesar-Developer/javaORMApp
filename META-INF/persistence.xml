@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="default">
+
+        <class>models.transformers.BbddDelegacion</class>
+        <class>models.transformers.BbddOng</class>
+        <class>models.transformers.BbddSedecentral</class>
+        <class>models.transformers.Socio</class>
+        <class>models.transformers.Equipo</class>
+        <class>models.transformers.Voluntario</class>
+        <class>models.transformers.Colaborador</class>
+        <class>models.transformers.PersonaContratada</class>
+        <class>models.transformers.VoluntarioInternacional</class>
+        <class>models.transformers.Proyecto</class>
+
+
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3309/db_spm"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="1234"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
